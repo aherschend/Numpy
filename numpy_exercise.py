@@ -54,6 +54,7 @@ print("-----------------------------------------------   STEP EIGHT  -----------
 newRegister = np.array([17.89,13.59,107.89,176.88,56.78])
 
 salesArray = np.append(salesArray, newRegister)
+salesArray.resize(5,5)
 print("Added Register 5: ")
 print(salesArray)
 
@@ -63,6 +64,8 @@ print("-----------------------------------------------   STEP NINE  ------------
 print("Before Update: ")
 print(salesArray)
 print()
+salesArray[2,3] = 20.14
 print("After Update: ")
+print(salesArray)
 
 
